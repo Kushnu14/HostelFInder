@@ -2,7 +2,6 @@ package com.example.hostelfinder;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
