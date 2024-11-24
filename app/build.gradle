@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    
     namespace 'com.example.hostelfinder'
     compileSdk 34
 
