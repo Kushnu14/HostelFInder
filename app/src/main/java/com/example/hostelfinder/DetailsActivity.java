@@ -3,7 +3,6 @@ package com.example.hostelfinder;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
 import android.content.Intent;
 import android.Manifest;
 import android.content.pm.PackageManager;
