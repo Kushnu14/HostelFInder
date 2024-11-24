@@ -4,14 +4,9 @@ public class Model {
     String id;
     String Name_Of_Hostel,Address,Gender;
     Integer Capacity;
-
     Double Rent;
-
     String Contact;
     String img;
-
-
-
     String Location;
 
     public Model() {
