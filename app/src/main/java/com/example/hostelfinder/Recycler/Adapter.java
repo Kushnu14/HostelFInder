@@ -52,6 +52,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             intent.putExtra("Gender",model.getGender());
             intent.putExtra("id",model.getId());
             intent.putExtra("img",model.getImg());
+            intent.putExtra("Location",model.getLocation());
 
             context.startActivity(intent);
         });

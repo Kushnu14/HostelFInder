@@ -63,8 +63,17 @@ public class MainScreen extends AppCompatActivity {
 
     private void filterList(String text) {
         java.util.List<Model> filteredList =new ArrayList<>();
+        String lowerText = text.toLowerCase();
+
         for(Model item: hostelList){
-            if(item.getName_Of_Hostel().toLowerCase().contains(text.toLowerCase())){
+            String rentString = String.valueOf(item.getRent());
+            String capacityString = String.valueOf(item.getCapacity());
+            if(item.getName_Of_Hostel().toLowerCase().contains(lowerText)||
+                    item.getLocation().toLowerCase().contains(lowerText) ||
+                    item.getAddress().toLowerCase().contains(lowerText) ||
+                    item.getGender().toLowerCase().contains(lowerText) ||
+                    rentString.toLowerCase().contains(lowerText) ||  // Compare rent as string
+                    capacityString.toLowerCase().contains(lowerText)){
                 filteredList.add(item);
             }
         }

@@ -10,10 +10,14 @@ public class Model {
     String Contact;
     String img;
 
+
+
+    String Location;
+
     public Model() {
     }
 
-    public Model(String id, String name_Of_Hostel, String address, String gender, Integer capacity, Double rent, String contact) {
+    public Model(String id, String name_Of_Hostel, String address, String gender, Integer capacity, Double rent, String contact,String location) {
         this.id = id;
         this.Name_Of_Hostel = name_Of_Hostel;
         this.Address = address;
@@ -21,6 +25,7 @@ public class Model {
         this.Capacity = capacity;
         this.Rent = rent;
         this.Contact = contact;
+        this.Location = location;
     }
 
     public String getId() {
@@ -86,5 +91,12 @@ public class Model {
 
     public void setRent(Double rent) {
         this.Rent = rent;
+    }
+    public String getLocation() {
+        return Location;
+    }
+
+    public void setLocation(String location) {
+        Location = location;
     }
 }
