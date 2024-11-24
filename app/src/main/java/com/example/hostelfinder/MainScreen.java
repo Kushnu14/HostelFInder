@@ -16,7 +16,6 @@ import com.example.hostelfinder.databinding.ActivityMainScreenBinding;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
-
 import java.util.ArrayList;
 import java.util.Objects;
 
