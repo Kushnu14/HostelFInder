@@ -149,4 +149,5 @@ public class DetailsActivity extends AppCompatActivity {
             Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
         }
     }
+
 }

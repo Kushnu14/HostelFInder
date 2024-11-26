@@ -17,7 +17,7 @@ public class Model {
     public Model() {
     }
 
-    public Model(String id, String name_Of_Hostel, String address, String gender, Integer capacity, Double rent, String contact,String location) {
+    public Model(String id, String name_Of_Hostel, String address, String gender, Integer capacity, Double rent, String contact,String location,String img) {
         this.id = id;
         this.Name_Of_Hostel = name_Of_Hostel;
         this.Address = address;
@@ -26,6 +26,7 @@ public class Model {
         this.Rent = rent;
         this.Contact = contact;
         this.Location = location;
+        this.img = img;
     }
 
     public String getId() {

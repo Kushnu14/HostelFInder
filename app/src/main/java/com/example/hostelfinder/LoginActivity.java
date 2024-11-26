@@ -182,4 +182,11 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        // Exit the app when the back button is pressed
+        super.onBackPressed();
+        finishAffinity(); // Closes all activities and exits the app
+    }
+
 }

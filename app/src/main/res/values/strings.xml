@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">HostelFInder</string>
     <string name="unlock_your_home_away_from_home">Unlock Your Home Away from Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_hostel">Add Hostel</string>
+    <string name="home">Home</string>
+    <string name="hostel_not_found">Hostel Not Found</string>
+    <string name="search_here">Search Here...</string>
+    <string name="add_new_hostel_data_i">Add New Hostel Data if found</string>
 </resources>
