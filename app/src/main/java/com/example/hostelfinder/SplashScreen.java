@@ -1,10 +1,8 @@
 package com.example.hostelfinder;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;

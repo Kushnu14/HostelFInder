@@ -3,7 +3,6 @@ package com.example.hostelfinder;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
 import android.content.Intent;
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -149,5 +148,9 @@ public class DetailsActivity extends AppCompatActivity {
             Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
         }
     }
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> 6502dd35a203c6f4eb4796e24acfb03e44a6630c
