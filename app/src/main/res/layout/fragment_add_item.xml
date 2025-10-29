@@ -3,97 +3,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AddItemFragment"
     android:backgroundTint="@color/purple_200">
-
-
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:paddingTop="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/purple_200"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="@string/add_new_hostel_data_i"
-            android:textColor="#ffffff"
-            android:textSize="25sp"
-            android:textStyle="italic" />
         <EditText
             android:id="@+id/et_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Name"
-            android:minHeight="48dp" />
+            android:layout_height="50dp"
+            android:background="@drawable/custom_add_edittext"
+            android:drawableLeft="@drawable/hostel_icon"
+            android:drawablePadding="8dp"
+            android:hint="Name Of Hostel"
+            android:padding="8dp" />
 
-        <EditText
-            android:id="@+id/et_address"
+        <AutoCompleteTextView
+            android:id="@+id/search"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Address"
-            android:minHeight="48dp" />
+            android:layout_marginTop="30dp"
+            android:editable="false"
+            android:layout_height="50dp"
+            android:hint="Location"
+            android:drawableLeft="@drawable/location_icon"
+            android:drawablePadding="8dp"
+            android:background="@drawable/custom_add_edittext" />
 
         <EditText
             android:id="@+id/et_contact"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:hint="Contact"
-            android:minHeight="48dp" />
+            android:background="@drawable/custom_add_edittext"
+            android:drawableLeft="@drawable/phone_icon"
+            android:layout_marginTop="30dp"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:maxLength="10"/>
 
         <EditText
             android:id="@+id/et_rent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
             android:hint="Rent"
-            android:minHeight="48dp" />
+            android:background="@drawable/custom_add_edittext"
+            android:drawableLeft="@drawable/currrency"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:inputType="number"/>
 
         <EditText
             android:id="@+id/et_capacity"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
             android:hint="Capacity"
-            android:minHeight="48dp" />
-
-        <EditText
-            android:id="@+id/et_gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Gender"
-            android:minHeight="48dp" />
-
-        <EditText
-            android:id="@+id/et_location"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Location"
+            android:background="@drawable/custom_add_edittext"
+            android:drawableLeft="@drawable/capacity_icon"
             android:minHeight="48dp"
-            android:layout_marginBottom="25dp"/>
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:inputType="number"/>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginBottom="25dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                app:startIconTint="@color/black"
+                app:boxStrokeWidth="2dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:paddingStart="30dp"
+                    android:hint="Select Gender"
+                    app:hintTextAppearance="?attr/editTextStyle"
+                    android:textColorHint="?attr/editTextColor"
+                    tools:ignore="SpeakableTextPresentCheck">
+                </AutoCompleteTextView>
+
+            </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:id="@+id/btn_upload_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Upload Image" />
-
         <Button
             android:id="@+id/btn_add_hostel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add Hostel" />
+            android:text=" + Add Hostel" />
     </LinearLayout>
+
     </ScrollView>
-
 </FrameLayout>
-

@@ -8,4 +8,7 @@
     <string name="hostel_not_found">Hostel Not Found</string>
     <string name="search_here">Search Here...</string>
     <string name="add_new_hostel_data_i">Add New Hostel Data if found</string>
+    <string name="displayed_image">Displayed image</string>
+
+
 </resources>

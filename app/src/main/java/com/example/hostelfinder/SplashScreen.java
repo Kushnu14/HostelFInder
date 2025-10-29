@@ -14,17 +14,10 @@ import com.airbnb.lottie.LottieAnimationView;
 
 @SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-
-
-
-
-       //lottieAnimationView.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -33,13 +26,7 @@ public class SplashScreen extends AppCompatActivity {
                 finish();
             }
         },3000);
-
-
-
     }
-
-
-
 }
 
 

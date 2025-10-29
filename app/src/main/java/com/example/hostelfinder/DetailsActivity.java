@@ -107,11 +107,6 @@ public class DetailsActivity extends AppCompatActivity {
                     Toast.makeText(DetailsActivity.this, "Fetching current location, please wait...", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
-
-
-
-
                 // Open Google Maps with the route
                 Uri uri = Uri.parse("https://www.google.com/maps/dir/" + currentLocation + "/" +  Uri.encode(Location) );
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
@@ -142,15 +137,15 @@ public class DetailsActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == 1 && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+        if (requestCode == 100 && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             getCurrentLocation();
         } else {
             Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
         }
     }
-<<<<<<< HEAD
+
 
 }
-=======
-}
->>>>>>> 6502dd35a203c6f4eb4796e24acfb03e44a6630c
+
+
+

@@ -131,10 +131,12 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
@@ -181,20 +183,22 @@ public class MainScreenFragment extends Fragment {
         loadData();
 
         // Setup SearchView listener
-        binding.searchview.addTextChangedListener(new TextWatcher() {
+        binding.searchview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            public boolean onQueryTextSubmit(String query) {
+                // Handle search action when user submits the query
+                filterList(query);
+                return false; // Return true if the query is handled
+            }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                filterList(s.toString());
+            public boolean onQueryTextChange(String newText) {
+                // Handle real-time text changes in the SearchView
+                filterList(newText);
+                return true;
             }
         });
     }
-
     private void filterList(String text) {
         List<Model> filteredList = new ArrayList<>();
         String lowerText = text.toLowerCase();
