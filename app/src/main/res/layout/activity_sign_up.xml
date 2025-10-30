@@ -47,17 +47,32 @@
                 android:textColor="@color/black"/>
 
             <EditText
+                android:id="@+id/signup_password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/signup_password"
                 android:inputType="textPassword"
                 android:background="@drawable/custom_edittext"
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="Password"
                 android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableRight="@drawable/baseline_visibility_off_24"
                 android:drawablePadding="8dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/signup_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Confirm Password"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableRight="@drawable/baseline_visibility_off_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black" />
+
 
             <Button
                 android:layout_width="match_parent"
