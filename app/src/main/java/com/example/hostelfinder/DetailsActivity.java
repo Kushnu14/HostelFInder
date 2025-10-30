@@ -137,7 +137,7 @@ public class DetailsActivity extends AppCompatActivity {
         });
     }
 
-    // ====================== LOCATION CODE ======================
+    // LOCATION CODE
 
     private void fetchLastLocation() {
         try {
